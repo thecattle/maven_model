@@ -15,11 +15,13 @@
 
     <dependencies>
 
+        <!-- 引入 service jar -->
         <dependency>
             <groupId>com.sun</groupId>
             <artifactId>maven_service</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <version>${project.version}</version>
         </dependency>
+
 
     </dependencies>
 

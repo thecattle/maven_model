@@ -7,17 +7,10 @@
         <groupId>com.sun</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
+    <packaging>jar</packaging>
     <modelVersion>4.0.0</modelVersion>
 
-    <packaging>jar</packaging>
+    <artifactId>maven_dao</artifactId>
 
-    <artifactId>maven_service</artifactId>
 
-    <dependencies>
-        <dependency>
-            <groupId>com.sun</groupId>
-            <artifactId>maven_dao</artifactId>
-            <version>${project.version}</version>
-        </dependency>
-    </dependencies>
 </project>

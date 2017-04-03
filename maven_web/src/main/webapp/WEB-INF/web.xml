@@ -9,4 +9,21 @@
         <welcome-file>index.html</welcome-file>
     </welcome-file-list>
 
+    <!--spring mvc 配置 -->
+    <servlet>
+        <servlet-name>spring-mvc</servlet-name>
+        <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+        <init-param>
+            <param-name>contextConfigLocation</param-name>
+            <param-value>classpath:spring-mvc.xml</param-value>
+        </init-param>
+        <load-on-startup>1</load-on-startup> <!-- 是启动顺序，让这个Servlet随Servletp容器一起启动。 -->
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>spring-mvc</servlet-name>
+        <url-pattern>/</url-pattern> <!-- 会拦截/的请求。 -->
+    </servlet-mapping>
+
+
 </web-app>
